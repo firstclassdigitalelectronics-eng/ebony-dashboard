@@ -40,7 +40,7 @@ let S={users:[{id:1,name:"Admin",role:"admin",pin:"1234",payType:"Monthly salary
 reqs:[],sales:[],pos:[],exp:[],reps:[],me:null,tab:"home"};
 try{const d=localStorage.getItem("ebony_v2");if(d)S=Object.assign(S,JSON.parse(d));const m=localStorage.getItem("ebony_me");if(m)S.me=+m}catch(e){}
 const COLS=["users","cat","reqs","sales","pos","exp","reps"];
-const SB_URL="PASTE_SUPABASE_URL",SB_KEY="PASTE_SUPABASE_ANON_KEY";
+const SB_URL="https://supabase.com/dashboard/project/cynchndzhhvilfrbvkdv/settings/api-keys",SB_KEY="sb_publishable_gPvZMfLP-w26j_DONRqA4w_4636zyp6";
 let sb=null,SH={},ready=false,PEND=false,SES=null;
 const save=()=>{try{localStorage.setItem("ebony_me",S.me||"")}catch(e){}
  if(!sb)return;
